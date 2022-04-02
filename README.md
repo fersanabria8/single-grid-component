@@ -1,5 +1,7 @@
 # Frontend Mentor - Single price grid component
 
+https://spectacular-youtiao-fc8ad3.netlify.app/ web live!
+
 ![Design preview for the Single price grid component coding challenge](./design/desktop-preview.jpg)
 
 ## Welcome! 👋
