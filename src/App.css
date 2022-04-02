@@ -1,38 +1,174 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Karla', sans-serif;
+}
+
+.App{
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 1440px;
+  min-height: 100vh; 
+  background-color: hsl(204, 43%, 93%);
+}
+
+.container{
+  margin: 0 auto;
+  max-width: 700px;
+}
+
+.wrapper{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  line-height: 1.5;
+  margin: 0 auto;
+  width: 100%;
+  box-shadow: 0 0 16px -4px #98a6bd;
+}
+
+.one{
+  grid-column: 1/3;
+  grid-row: 1/2;
+  background-color: white;
+  padding: 35px;
+  border-radius: 10px 10px 0px 0px;
+
+}
+
+.two{
+  grid-column: 1/2;
+  grid-row: 2/3;
+  background-color: hsl(179, 62%, 43%);
+  padding: 35px;
+  border-radius: 0px 0px 0px 10px;
+}
+
+.three{
+  grid-column: 2/3;
+  grid-row: 2/3;
+  background-color: hsl(179, 62%, 48%);
+  padding: 35px;
+  color: hsl(204, 43%, 93%);
+  border-radius: 0px 0px 10px 0px;
+}
+
+/* start - one */
+.title{
+  color:  hsl(179, 62%, 43%);
+}
+
+.sub-title {
+  color: hsl(71, 73%, 54%);
+}
+.sub-title .paragraph-1{
+  color: hsl(71, 73%, 54%);
+}
+.sub-title p {
+  padding-top: 20px;
+  color: hsl(218, 22%, 67%);
+}
+/* end - one */
+
+/* start - two */
+.title-2 {
+  color: hsl(204, 43%, 93%);
+  font-size: 20px;
+}
+
+.paragraph-2 {
+  color: hsl(204, 43%, 93%);
+  padding-top: 10px;
+  
+}
+.paragraph-2 h3{
+  font-size: 32px;
+
+}
+span{
+  font-size: 16px;
+  margin-left: 5px;
+}
+
+button{
+  background-color:  hsl(71, 73%, 54%);
+  width: 280px;
+  height: 54px;
+  border: none;
+  font-size: 18px;
+  border-radius: 10px;
+  color: white;
+  box-shadow: 0 0 16px -6px rgba(0, 0, 0, 0.7);
+}
+.btn{
+  padding-top: 20px;
   text-align: center;
 }
+/* end - two */
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* start - three */
+.title-3{
+  font-size: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.paragraph-3{
+  font-size: 16px;
+  padding-top: 10px;
+  width:223px;
+}
+
+/* end - three */
+
+@media screen and (max-width: 720px) {
+
+  .container{
+    display: flex;
+    justify-content: center;
+    margin: 20px auto;
   }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+  .wrapper{
+    display: grid;
+    grid-template-columns: 1, 1fr;
+    line-height: 1.5;
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
   }
-  to {
-    transform: rotate(360deg);
+
+  .one{
+    grid-column: 1/3;
+    grid-row: 1/2;
+    background-color: white;
+    padding: 35px;
+    border-radius: 10px 10px 0px 0px;
+    width: 350px;
+  
   }
+  
+  .two{
+    grid-column: 1/3;
+    grid-row: 2/3;
+    background-color: hsl(179, 62%, 43%);
+    padding: 35px;
+    border-radius: 0px 0px 0px 0px;
+    width: 350px;;
+  }
+  
+  .three{
+    grid-column: 1/3;
+    grid-row: 3/4;
+    background-color: hsl(179, 62%, 48%);
+    padding: 35px;
+    color: hsl(204, 43%, 93%);
+    border-radius: 0px 0px 10px 10px;
+    width: 350px;
+  }
+
+  button{
+    width: 200px;
+    height: 54px;
+  }
+
 }
